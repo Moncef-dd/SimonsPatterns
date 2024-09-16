@@ -1,0 +1,46 @@
+body {
+    background-color:rgb(0, 46, 86); 
+
+    
+
+}
+h1 {
+    justify-self: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.container {
+    display: grid;
+
+    grid-template-columns: 200px 200px 200px;
+    grid-auto-rows: 200px 200px 200px;
+    gap: 20px;
+
+
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    border-width: 10%;
+    border-radius: 20%;
+    background-color: aqua;
+}
+#blu {
+    background-color: blue;
+}
+#grn {
+    background-color: green;
+}
+#red {
+    background-color: red;
+}
+#ylw {
+    background-color: yellow;
+}
