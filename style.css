@@ -15,6 +15,10 @@ h1 {
     padding-top: 150px;
 }
 
+.pattern {
+
+}
+
 .container {
     display: grid;
 
@@ -44,3 +48,19 @@ h1 {
 #ylw {
     background-color: yellow;
 }
+#crm{
+    background-color: rgb(213, 208, 146);
+}
+#orng{
+    background-color: orange;
+}
+#cyn {
+    background-color: aqua;
+}
+#brown {
+    background-color: rgb(115, 32, 32);
+}
+#gry {
+    background-color: gray;
+}
+
