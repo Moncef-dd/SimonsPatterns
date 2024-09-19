@@ -19,7 +19,7 @@ function nextColorChoosen(colorArray){
 //console.log(nextSequence()); 
 
 function generatePattern(currentPattern){
-    if(!currentPattern.length){
+    if(!currentPattern){
         document.querySelector("h1").innerHTML = "New Game has been Started"; 
         let currentPattern = []; 
         let nextColor = nextColorChoosen(buttonColors)
