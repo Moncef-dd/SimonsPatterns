@@ -16,11 +16,11 @@ $(document).keydown(function() {
     }
   });
 
-$(".btn").click(function() {
+$(".box").click(function() {
     let userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
   
-    playSound(userChosenColor);
+    //playSound(userChosenColor);
     animatePress(userChosenColor);
   
     // Check user's sequence against game pattern
@@ -40,9 +40,9 @@ function checkAnswer(currentLevel) {
       }
     } else {
       // If the user got the step wrong
-      playSound("wrong");
+      //playSound("wrong");
       $("body").addClass("game-over");
-      $("#level-title").text("Game Over, Press Any Key to Restart");
+      $("#levels").text("Game Over, Press Any Key to Restart");
   
       setTimeout(function() {
         $("body").removeClass("game-over");
@@ -55,7 +55,7 @@ function checkAnswer(currentLevel) {
   function nextSequence() {
     userClickedPattern = [];
     level++;
-    $("#level-title").text("Level " + level);
+    $("#levels").text("Level " + level);
   
     let randomNumber = Math.floor(Math.random() * 9);
     let randomChosenColor = buttonColors[randomNumber];
@@ -66,7 +66,7 @@ function checkAnswer(currentLevel) {
       .fadeOut(100)
       .fadeIn(100);
   
-    playSound(randomChosenColor);
+    //playSound(randomChosenColor);
   }
  
   function animatePress(currentColor) {
