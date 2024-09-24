@@ -3,10 +3,11 @@ let buttonColors = [
     "yellow", "blue", "green", 
     "gray", "orange", "brown"
 ]; 
-let playerSection = []; 
-let level = 1; 
-
+let gamePattern = [];
+let userClickedPattern = [];
 let gameStarted = false;
+let level = 0;
+
 $(document).keydown(function() {
     if (!gameStarted) {
       $("#levels").text("Level " + level);
@@ -56,7 +57,7 @@ function checkAnswer(currentLevel) {
     level++;
     $("#level-title").text("Level " + level);
   
-    let randomNumber = Math.floor(Math.random() * 4);
+    let randomNumber = Math.floor(Math.random() * 9);
     let randomChosenColor = buttonColors[randomNumber];
     gamePattern.push(randomChosenColor);
   
