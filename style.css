@@ -15,7 +15,8 @@ h1 {
     padding-top: 150px;
 }
 
-.pattern {
+.pressed {
+    filter: brightness(150%);
 
 }
 
